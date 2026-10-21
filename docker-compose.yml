@@ -23,7 +23,7 @@ services:
     environment:
       # --- Core (mandatory) ---
       - PORT=3100                              # Server port
-      - HOST=192.168.110.215                          # Bind inside the container
+      - HOST=0.0.0.0                 # Bind inside the container
       - SUBSENSE_ENCRYPTION_KEY=azbird               # REQUIRED
 
       # --- Core (optional) ---

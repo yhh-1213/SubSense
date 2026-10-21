@@ -19,7 +19,7 @@ services:
     ports:
       - "3100:3100"
     env_file:
-      - .env
+      - .env.dockhand
     environment:
       # --- Core (mandatory) ---
       - PORT=3100                              # Server port

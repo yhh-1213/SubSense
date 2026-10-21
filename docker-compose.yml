@@ -18,6 +18,8 @@ services:
         condition: service_healthy
     ports:
       - "3100:3100"
+    env_file:
+      - .env.dockhand
     environment:
       # --- Core (mandatory) ---
       - PORT=3100                              # Server port
